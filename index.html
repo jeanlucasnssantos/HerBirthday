@@ -168,12 +168,17 @@
     
 
     <script>
+        let audioPlayed = false;
 
         function openGift() {
+            if (!audioPlayed) {
 
-            let audio = new Audio("birthday.mp3"); // Use o nome do seu arquivo de áudio
+                let audio = new Audio("birthday.mp3"); // Use o nome do seu arquivo de áudio
 
-            audio.play();
+                audio.play();
+
+                audioPlayed = true;
+            }
 
 
 
